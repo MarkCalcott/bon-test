@@ -1,0 +1,10 @@
+name: bon-test
+dependencies:
+  - python=3.12
+  - ollama-python
+  - pandas
+  - matplotlib
+  - ipykernel
+  - statsmodels
+  - scipy
+  - tqdm
