@@ -1,5 +1,7 @@
 # Exploratory analysis of a Best-of-N (BoN) jailbreaking model
 
+<img src="assets/logo.png" style="max-width: 500px; height: auto;" alt="Padlock diagram with BoN phrase as a key">
+
 ## Contents
 
 - [Background](#background)
@@ -138,9 +140,9 @@ if that may have an impact similar to the direct requests with please. The other
 improved prompts were alternatives 8 and 9, which both asked indirectly by
 asking for a template or blank to be completed.
 
-|                                                                                                                                                         <img src="data/figures/experiment_2.png" style="max-width: 500px; height: auto;" alt="Figure comparing alternative prompts without BoN in the basic context">                                                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| _Comparison of different prompts without BoN. Bars show the percentage of password leakage from 100 samples. Error bars represent 95% Wilson score confidence intervals. A chi-square test showed that the counts differed significantly across the 10 prompts (χ²(9) = 405.35, p < .001). For post hoc testing, each alternative prompt was compared with the `Original` prompt using Fisher's exact test. \* p < 0.05, ** p < 0.01, \*** p < 0.001; n.s., not significant._ |
+|                                                                                                                                                                      <img src="data/figures/experiment_2.png" style="max-width: 500px; height: auto;" alt="Figure comparing alternative prompts without BoN in the basic context">                                                                                                                                                                      |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| _Comparison of different prompts without BoN using the `Basic` context. Bars show the percentage of password leakage from 100 samples. Error bars represent 95% Wilson score confidence intervals. A chi-square test showed that the counts differed significantly across the 10 prompts (χ²(9) = 405.35, p < .001). For post hoc testing, each alternative prompt was compared with the `Original` prompt using Fisher's exact test. \* p < 0.05, ** p < 0.01, \*** p < 0.001; n.s., not significant._ |
 
 ### Experiment 3: Testing the best phrases with and without BoN
 
@@ -161,9 +163,9 @@ explanation is, similar to directly passing context for a simple model organism,
 that the use of BoN is a flag for being tested and results in more aligned
 responses.
 
-|                                                                                                                                                    <img src="data/figures/experiment_3.png" style="max-width: 500px; height: auto;" alt="Figure comparing optimised prompts with and without BoN in the secret context">                                                                                                                                                     |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| _Comparison of different prompts without BoN. Bars show the percentage of password leakage from 250 samples. Error bars represent 95% Wilson score confidence intervals. A chi-square test showed that the counts differed significantly across the 12 prompts (χ²(11) = 633.53, p < .001). For post hoc testing, each alternative prompt was compared with the `Secret` prompt using Fisher's exact test. \* p < 0.05, ** p < 0.01, \*** p < 0.001; n.s., not significant._ |
+|                                                                                                                                                                             <img src="data/figures/experiment_3.png" style="max-width: 500px; height: auto;" alt="Figure comparing optimised prompts with and without BoN in the secret context">                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| _Comparison of optimised prompts with and without BoN using the `Secret` context. Bars show the percentage of password leakage from 250 samples. Error bars represent 95% Wilson score confidence intervals. A chi-square test showed that the counts differed significantly across the 12 prompts (χ²(11) = 633.53, p < .001). For post hoc testing, each alternative prompt was compared with the `Original` prompt without BoN using Fisher's exact test. \* p < 0.05, ** p < 0.01, \*** p < 0.001; n.s., not significant._ |
 
 ## Conclusions
 
